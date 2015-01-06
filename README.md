@@ -7,7 +7,9 @@ Installation
 ------------
 * Linux: `sudo apt-get install libopencv-dev libcv-dev libcvaux-dev libhighgui-dev`.
     * for a manual installation, see [there](https://help.ubuntu.com/community/OpenCV).
-* Mac OS X: `brew tap homebrew/science && brew install opencv`.
+* Mac OS X: 
+   * Install Brew : ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+   * `brew tap homebrew/science && brew install opencv`.
 
 
 Compilation
@@ -15,4 +17,3 @@ Compilation
 Don't forget to link the OpenCV library: `` `pkg-config --cflags --libs opencv` ``.
 
 Example: ``g++ `pkg-config --cflags --libs opencv` test.c -o test``.
-
